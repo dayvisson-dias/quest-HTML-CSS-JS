@@ -1,0 +1,124 @@
+.container {
+    background-image: url(../image/bg-repeat.jpg);
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.container .informacoes {
+    max-width: 460px;
+    height: 200px;
+    margin-right: 200px;
+    color: #ffffff;
+    
+}
+
+.container .informacoes h1 {
+    font-weight: 900;
+    size: 20px;
+    
+}
+
+.container .informacoes p {
+    display: flex;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 11px;
+}
+
+.container .formulario {   
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 450px;
+    min-height: 70vh;
+    margin-right: 50px;
+    justify-content: center;
+}
+
+.container .formulario .place-info {
+    border: solid 1px #000000;
+    margin: 0px 20px 0px 20px;
+    border-radius: 7px;
+    height: 35px;
+    font-weight: 400;
+    justify-content: space-between;
+}
+
+
+.container .formulario .preenchimento{
+    padding: 10px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.container .formulario .place-info::placeholder{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.container .formulario .mensagem {
+    height: 200px;
+    position: relative;
+    padding-bottom: 200px;
+}
+
+
+.container .formulario .mensagem::placeholder {
+    position: absolute;
+    top: 6px;
+}
+
+.container .formulario .info-obrigatorio {
+    margin: 7px 22px 0px 22px;
+}
+
+.container .btn-enviar {
+    padding: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #3ccc87;
+    border-radius: 7px;
+    margin: 20px 22px 0px 22px;
+    border: none;
+    
+}
+
+.container .btn-enviar:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px rgb(43, 42, 42);
+    
+}
+.container .btn-enviar:active {
+    transform: scale(0.95);
+    background-color: #3ccc87;
+    
+}
+
+.container .formulario .alerta {
+    margin-left: 28px;
+    font-size: 8px;
+    opacity: 0;
+}
+
+.container .formulario .alerta.ativo {
+    margin-left: 28px;
+    font-size: 8px;
+    color: #f52e2e;
+    opacity: 1;
+}
+
+.container .formulario .preenchido {
+    border-color: #00C22B;
+}
+
+.container .formulario .nao-preenchido {
+    border-color: #f52e2e;
+}
+
+
